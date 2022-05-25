@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: de-vri-es/setup-git-credentials@v2
+        with:
+          credentials: ${{secrets.SECRET_TOKEN}}
       - name: checkout repo content
         uses: actions/checkout@v3
       - name: setup python
@@ -21,11 +24,18 @@ jobs:
       - name: run cron script
         run: |
           python test.py
-      - name: stage changed files
-        run: git add .
-      - name: commit changed files
-        run: git commit -m "Auto fetch data and update"
-      - name: fetch from master
-        run: git fetch origin master
-      - name: push code to master
-        run: git push origin HEAD:master
+      - name: set global variable
+        run: |
+          git config --global user.name 'steveoni'
+          git config --global user.email 'steohenoni2@gmail.com'
+      - name: Check for modified files
+        id: git-check
+        run: echo ::set-output name=modified::$(if [ -n "$(git status --porcelain)" ]; then echo "true"; else echo "false"; fi)
+      - name: Update changes in GitHub repository
+        if: steps.git-check.outputs.modified == 'true'
+        run: |
+          git status
+          git add .
+          git commit -m "Auto fetch data and update"
+          git fetch origin master
+          git push origin HEAD:main

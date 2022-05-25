@@ -37,5 +37,5 @@ jobs:
           git status
           git add .
           git commit -m "Auto fetch data and update"
-          git fetch origin master
+          git fetch origin main
           git push origin HEAD:main

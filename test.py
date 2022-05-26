@@ -99,7 +99,7 @@ def add_info(row):
             row["Alpha-2 code"]
         )
     )
-    delay = 1.5
+    delay = 20
     time.sleep(delay)
     WebDriverWait(driver, delay).until(
         EC.presence_of_element_located((By.CLASS_NAME, "core-view-summary"))

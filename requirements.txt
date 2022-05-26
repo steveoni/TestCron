@@ -1,1 +1,7 @@
 dataflows
+timezonefinder==6.0.0
+beautifulsoup4
+html-table-extractor
+pycountry
+selenium
+xmltodict

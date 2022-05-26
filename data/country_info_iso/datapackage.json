@@ -1,0 +1,69 @@
+{
+  "bytes": 16408,
+  "count_of_rows": 249,
+  "hash": "59f98520c1efa89277580cb3e759072c",
+  "name": "iso-country-codes",
+  "profile": "data-package",
+  "resources": [
+    {
+      "bytes": 16408,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "4ad25e6c71578b30c9603402f7e0f0c6",
+      "name": "iso-countries",
+      "path": "iso-countries.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "English short name",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "French short name",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Alpha-2 code",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Alpha-3 code",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Numeric",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Full name",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Independent",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}

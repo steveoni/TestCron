@@ -1,5 +1,5 @@
 dataflows
-timezonefinder==6.0.0
+timezonefinder
 beautifulsoup4
 html-table-extractor
 pycountry

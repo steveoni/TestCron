@@ -2,7 +2,7 @@ name: Fedex Cron setup
     
 on:
   schedule:
-    - cron: "20 * * * *"
+    - cron: "59 * * * *"
 
 jobs:
   build:

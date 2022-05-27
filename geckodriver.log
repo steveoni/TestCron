@@ -113,3 +113,32 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 Read port: 35403
 1653682388713	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 1653687397735	Marionette	INFO	Stopped listening on port 35403
+1653689490252	geckodriver	INFO	Listening on 127.0.0.1:41601
+1653689491266	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-no-remote" "-profile" "/tmp/rust_mozprofilebC1ikA"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1653689496515	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilebC1ikA/search.json.mozlz4", (void 0)))
+1653689501094	Marionette	INFO	Listening on port 41933
+Read port: 41933
+1653689501252	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1653689501275	geckodriver	INFO	Listening on 127.0.0.1:45157
+1653689501280	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-no-remote" "-profile" "/tmp/rust_mozprofilehZiLkD"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1653689501590	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehZiLkD/search.json.mozlz4", (void 0)))
+1653689502838	Marionette	INFO	Listening on port 45103
+Read port: 45103
+1653689502899	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1653694510635	Marionette	INFO	Stopped listening on port 45103
+
+###!!! [Parent][PCompositorManagerParent] Error: RunMessage(msgname=PCompositorBridge::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+

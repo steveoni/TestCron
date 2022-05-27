@@ -1,12 +1,12 @@
 {
-  "bytes": 16408,
+  "bytes": 11926,
   "count_of_rows": 249,
-  "hash": "59f98520c1efa89277580cb3e759072c",
+  "hash": "30b0f4790e96ec71082d7f764819c942",
   "name": "iso-country-codes",
   "profile": "data-package",
   "resources": [
     {
-      "bytes": 16408,
+      "bytes": 11926,
       "dialect": {
         "caseSensitiveHeader": false,
         "delimiter": ",",
@@ -18,7 +18,7 @@
       },
       "encoding": "utf-8",
       "format": "csv",
-      "hash": "4ad25e6c71578b30c9603402f7e0f0c6",
+      "hash": "9fa3bc7ce76a10219b10cd952907a740",
       "name": "iso-countries",
       "path": "iso-countries.csv",
       "profile": "tabular-data-resource",
